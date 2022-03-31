@@ -10,22 +10,22 @@
 <body>
     <div id="container">
         <h1>CALCULADORA</h1>
-        <input type="text" id="result">
+        <input type="text" id="result" placeholder="0">
         <!-- <p id="result"></p> -->
         <button class="btn sinal" onclick="clean()">AC</button>
         <button class="btn sinal" onclick="back()">C</button>
-        <button class="btn sinal" onclick="insert('/')">/</button>
-        <button class="btn sinal" onclick="insert('*')">x</button>
+        <button class="btn sinal" onclick="operador('/')">/</button>
+        <button class="btn sinal" onclick="operador('*')">x</button>
 
         <button class="btn numero" onclick="insert('7')">7</button>
         <button class="btn numero" onclick="insert('8')">8</button>
         <button class="btn numero" onclick="insert('9')">9</button>
-        <button class="btn sinal" onclick="insert('-')">-</button>
+        <button class="btn sinal" onclick="operador('-')">-</button>
 
         <button class="btn numero" onclick="insert('4')">4</button>
         <button class="btn numero" onclick="insert('5')">5</button>
         <button class="btn numero" onclick="insert('6')">6</button>
-        <button class="btn sinal" onclick="insert('+')">+</button>
+        <button class="btn sinal" onclick="operador('+')">+</button>
 
         <button class="btn numero" onclick="insert('1')">1</button>
         <button class="btn numero" onclick="insert('2')">2</button>
@@ -33,7 +33,7 @@
         <button class="btn sinal" onclick="calcular()">=</button>
 
         <button class="btn numero"  onclick="insert('0')">0</button>
-        <button class="btn numero" onclick="insert('.')">.</button>
+        <button class="btn numero" onclick="virgula(',')">,</button>
     </div>
     <script src="script.js"></script>
 </body>
